@@ -1,0 +1,22 @@
+<div>
+  <h2><%=@cat_name[0].name %></h2>
+<table>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Key</th>
+    </tr>
+    <% @post_output.each do |output| %>
+    <tr>
+      <td><%=output.title %></td>
+      <td><%=output.description %></td>
+      <td><%=output.price %></td>
+      <td><%=output.key %></td>
+    </tr>
+     <% end %>
+</table>
+</div>
+
+
+

@@ -1,0 +1,17 @@
+
+<div>
+  <h2>Categories</h2>
+<ul>
+
+  <% @output.each do |output| %>
+  <li><a href="/post/show/<%= p output.id %>/"><%= p output.name %></li>
+  <% end %>
+</ul>
+
+<h1><a href= "/post/new">NEW POST</a></h1>
+
+<form action= "/post/edit" method= "get">
+<input type= "text" name= "key" placeholder= "(post key)">
+<input type= "submit" value="Update Post!">
+</form>
+</div>

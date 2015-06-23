@@ -1,0 +1,16 @@
+<div>
+  <h2> Update Post #<%=@id%></h2>
+  <p>
+    <form action= "/post/update_post" method= "post">
+      <table>
+        title<input type= "text" name= "title" value="<%= @b[0].title%>"><br>
+        description<input type= "text" name= "description" value="<%= @b[0].description%>"><br>
+        price<input type= "text" name= "price" value="<%= @b[0].price%>"><br>
+        email<input type= "text" name= "email" value="<%= @b[0].email%>"><br>
+        category<input type= "text" name= "category_id" value="<%= @b[0].category_id%>"><br>
+        <input type= "hidden" name="post_id" value= "<%=@id%>">
+        <input type= "submit" value= "Update">
+      </table>
+  </form>
+  </p>
+</div>
